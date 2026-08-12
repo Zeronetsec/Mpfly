@@ -1,0 +1,5 @@
+{
+    "Command": "--convert",
+    "Args": "<m3u|m3u8|folder|json|@alias> --to <m3u|m3u8|folder|json> --out <out>",
+    "Description": "convert between m3u/m3u8, folder, json formats"
+}

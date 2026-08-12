@@ -1,0 +1,5 @@
+{
+    "Command": "--addtrack",
+    "Args": "<folder|json|@alias>",
+    "Description": "add tracks using an interactive repl"
+}

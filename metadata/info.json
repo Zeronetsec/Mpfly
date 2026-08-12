@@ -1,0 +1,5 @@
+{
+    "Command": "--info",
+    "Args": "<folder|json|@alias>",
+    "Description": "display detailed playlist information"
+}

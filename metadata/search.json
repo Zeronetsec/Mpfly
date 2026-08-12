@@ -1,0 +1,5 @@
+{
+    "Command": "--search",
+    "Args": "<folder|json|@alias> <keyword> [--play <all|selection>]",
+    "Description": "search tracks within a playlist and optionally play them"
+}

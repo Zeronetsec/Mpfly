@@ -1,0 +1,5 @@
+{
+    "Command": "--alias",
+    "Args": "[--add <@name> <value>|--remove <@name>|--chval <@name> <newvalue>|--chname <@name> <@newname>]",
+    "Description": "manage aliases to simplify command workflows"
+}

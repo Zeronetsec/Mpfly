@@ -1,0 +1,5 @@
+{
+    "Command": "--chtrack",
+    "Args": "<folder|json|@alias>",
+    "Description": "edit tracks and playlists using an interactive repl"
+}

@@ -1,0 +1,5 @@
+{
+    "Command": "--playwith-priority",
+    "Args": "<folder|json|@alias> [<local|domain>]",
+    "Description": "change the playwith priority setting"
+}

@@ -1,0 +1,5 @@
+{
+    "Command": "--download",
+    "Args": "<url|folder|json|@alias> [--compress <auto|ffmpeg_cmd>] --out <out>",
+    "Description": "download tracks from sources with optional audio compression"
+}

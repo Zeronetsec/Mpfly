@@ -1,0 +1,5 @@
+{
+    "Command": "--history",
+    "Args": "[--clear|--summary-only]",
+    "Description": "display detailed playback history"
+}

@@ -1,0 +1,5 @@
+{
+    "Command": "--play",
+    "Args": "<file|url|folder|json|@alias>",
+    "Description": "play music with fallback (local or online streaming)"
+}
