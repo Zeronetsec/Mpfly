@@ -2,17 +2,17 @@ function install::extern::privdat() {
     local i
 
     if [[ -d "${root}/.privdat" ]]; then
-        echo -e "${B}[*] ${N}Setting up private data..."
+        echo -e "${color_B}[*] ${color_N}Setting up private data..."
         if [[ ! -d "${HOME}/.mpfly" ]]; then
             install::getinstall \
                 "command mkdir -p ${HOME}/.mpfly" \
-                "Create directory: ${GG}${HOME}/.mpfly${N}"
+                "Create directory: ${color_GG}${HOME}/.mpfly${color_N}"
         fi
 
         if [[ ! -d "${HOME}/.config/mpv" ]]; then
             install::getinstall \
                 "command mkdir -p ${HOME}/.config/mpv" \
-                "Create directory: ${GG}${HOME}/.config/mpv${N}"
+                "Create directory: ${color_GG}${HOME}/.config/mpv${color_N}"
         fi
 
         command mapfile -t mpvcfg < <(
@@ -28,7 +28,7 @@ function install::extern::privdat() {
                         ${root}/.privdat/mpv/${i} \
                         > ${HOME}/.config/mpv/${i}
                 " \
-                "Replace: ${GG}${root}/.privdat/mpv/${i} ${DG}-> ${GG}${HOME}/.config/mpv/${i}"
+                "Replace: ${color_GG}${root}/.privdat/mpv/${i} ${color_DG}-> ${color_GG}${HOME}/.config/mpv/${i}${color_N}"
         done
 
         install::getinstall \
@@ -37,6 +37,6 @@ function install::extern::privdat() {
                 ${root}/.privdat/mptrack.lst \
                 > ${HOME}/.mpfly/mptrack.lst
             " \
-            "Replace: ${GG}${root}/.privdat/mptrack.lst ${DG}-> ${GG}${HOME}/.mpfly/mptrack.lst"
+            "Replace: ${color_GG}${root}/.privdat/mptrack.lst ${color_DG}-> ${color_GG}${HOME}/.mpfly/mptrack.lst${color_N}"
     fi
 }; readonly -f install::extern::privdat
